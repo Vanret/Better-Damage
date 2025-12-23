@@ -1,0 +1,28 @@
+All tags use the "minecraft:" namespace.
+
+Basic elements —
+is_air — damage from flight, as well as your damage classified as Air
+is_earth — damage from being stuck in walls, falling blocks, and similar sources, as well as your damage classified as Earth
+is_freezing — any damage from freezing and cold (vanilla tag)
+is_fire — any damage from fire and its sources (vanilla tag)
+
+Additional elements —
+is_electricity — lightning damage, as well as your damage classified as Electricity
+is_darkness — wither damage, as well as your damage classified as Darkness
+is_holy — damage from Smite enchantment, as well as your damage classified as Holy
+is_poison — damage from poison effects, as well as your damage classified as Poison
+is_silver — damage from items included in the tag "forge:silver_items"
+is_nature — damage from natural sources (berry bushes, cacti, etc.), as well as your damage classified as Nature
+
+Special —
+is_psionics — damage you classify as Psionics
+is_sound — damage from sound (Warden attacks), as well as your damage classified as Sound
+is_magic — any damage from magic
+
+Basic —
+is_physics — physical damage (melee attacks), as well as your damage classified as Physics. Used only in damage modifier calculations
+is_physics_all — any damage that can be considered physical and is covered by armor in vanilla, as well as your damage classified as Physics. Used only in defense modifier calculations
+is_projectile — damage from projectiles (vanilla tag)
+is_explosion — damage from explosions (vanilla tag)
+is_inevitable — damage that has no defense or damage modifiers (e.g., starvation, suffocation, falling into the void, etc.), as well as your damage classified as Inevitable
+is_fall — fall damage (vanilla tag)
