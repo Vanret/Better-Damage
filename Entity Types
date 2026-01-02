@@ -1,0 +1,12 @@
+Better Damage also adds several entity types. These types determine their Res and Damage coefficients.
+It still works the same way using tags.
+
+Entity types:
+Undead (vanilla minecraft type) - They're dead, they take reduced damage from physics, cold and darkness. Fire, holy, and silver, on the other hand, are extremely effective.
+forge:demon_entities - hellish creatures, immune to fire, but susceptible to cold and especially electricity.
+forge:plant_entities - living plants (like creepers) are susceptible to cold, physical damage, and fire, but earth and nature damage are harmless to them, as is poison.
+forge:vampire_entities - very strong and have great resistance to most types of damage, except fire and holy.
+forge:werewolf_entities - virtually immune to all damage except silver, poison, and blood (especially silver).
+forge:poison_entities - they are not susceptible to poison, and their attacks are poisonous.
+forge:magic_entities - their physical strength and defense are weak, but their magic is extremely powerful. All their attacks are magical.
+forge:techno_entities - cold steel, they are well protected from physical attacks, fire, freeze, poison and blood, but electricity and magic causes increased damage to them.
