@@ -1,0 +1,46 @@
+In Better Damage, all resistances and bonus damage are tied to entity NBT tags. 
+
+All NBTs are float data type and have the following structure:
+
+"forge:" + "DAMAGE_TYPE" + "RES/DAM" + "NBT_TYPE"
+(For example - "forge:fireResOrigin" - This NBT is responsible for the entity's innate resistance to fire damage)
+
+[Res] type NBTs have a value space of 1 and less.
+[Dam] type NBTs have a value space of -1 and greater.
+In NBTs, data is stored as percentages (%) (for example, fireRes = 0.1 - means ignoring 10% of fire damage (else fireRes = -0.1 — this means the entity will receive 10% more damage from fire).
+
+
+When integrating Better Damage into your mod, you can use these NBT tags:
+
+[DAMAGE_TYPES]
+- phys - physics damage
+- earth
+- nature
+- projectile
+- fall
+- air
+- fire
+- sound
+- magic
+- freeze
+- electro
+- blast - explosion damage
+- darkness
+- holy
+- poison
+- psi - psionics damage
+- silver
+- blood
+- minions (ONLY for [Dam]) - is responsible for the damage your pets deal (if for example you decide to create a summoner class in your mod or something similar).
+
+[RES/DAM]
+- Res - NBT type responsible for the entity's protective coefficients
+- Dam - NBT type responsible for entity damage coefficients
+
+[NBT_TYPES] (You only have two types available, but you can add as many of your own as you want as long as they all end up in Origin or Add (preferably Add))
+- Origin - NBTs preserve the innate parameters of entities (for example, demon_entities are resistant to fire damage). If your parameters can change during the entity's lifetime, it's best not to use them here.
+- Add - Special NBT type added for integration with other mods. You can place any custom values ​​and variables here.
+
+
+
+
